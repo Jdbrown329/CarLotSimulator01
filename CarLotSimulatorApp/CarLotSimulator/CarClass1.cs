@@ -5,7 +5,14 @@ using System.Text;
 namespace CarLotSimulator
 {
     public class CarClass1
+
     {
+        internal static object numberOfCars;
+
+        public CarClass1()
+        {
+            CarLot.numberOfCars++;
+        }
         public string Make { get; set; }       //Create a seperate class file called Car
                                                //Car shall have the following properties: Year, Make, Model, EngineNoise, HonkNoise, IsDriveable
                                                //Car shall have the following methods: MakeEngineNoise(), MakeHonkNoise()
